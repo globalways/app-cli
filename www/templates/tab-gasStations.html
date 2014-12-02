@@ -1,8 +1,14 @@
 <ion-view title="GasStations">
+  <ion-nav-buttons side="left">
+    <button class="button" ng-click="login()">map</button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button" ng-click="login()">filter</button>
+  </ion-nav-buttons>
   <ion-content>
     <ion-list>
       <ion-item ng-repeat="station in stations" type="item-text-wrap" href="#/tab/station/{{station.id}}">
-        {{station.name}}
+        <h2>{{station.name}}</h2>
         {{station.from}}
       </ion-item>
     </ion-list>

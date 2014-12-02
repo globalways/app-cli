@@ -1,0 +1,38 @@
+<div class="modal">
+    <ion-header-bar>
+        <h1 class="title">Login</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="forget()">forget password</button>
+        </div>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeLogin()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="doLogin()">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="tel" placeholder="Phone" ng-model="loginData.phone">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Password" ng-model="loginData.password">
+                </label>
+            </div>
+            <div class="row">
+                <button class="button button-block button-positive" type="submit">Log in</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col col-33 col-offset-67">
+                <button class="button button-clear" ng-click="closeLogin()">Register</button>
+            </div>
+        </div>
+        <br/><br/><br/><br/>
+        <div class="row">
+            <button class="button button-block button-balanced">QQ login</button>
+        </div>
+        <div class="row">
+            <button class="button button-block button-energized">WeiBo login</button>
+        </div>
+    </ion-content>
+</div>
