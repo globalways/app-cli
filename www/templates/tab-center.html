@@ -1,5 +1,25 @@
-<ion-view title="Dashboard">
+<ion-view title="我的">
+  <ion-nav-buttons side="right">
+    <button class="button" ng-click="">通知</button>
+  </ion-nav-buttons>
   <ion-content class="padding">
-    <h1>Dash</h1>
+    <div class="card">
+      <div class="item item-avatar">
+        <img src="img/ionic.png">
+        <h2>流兴宇</h2>
+        <p>总积分: 9999</p>
+        <!--<button style="float:right" class="button icon-right ion-chevron-right"></button>-->
+      </div>
+      <div class="item row">
+        <button class="col" ng-click="">
+          <i class="icon ion-thumbsup"></i>
+          我的会员卡
+        </button>
+        <button class="col" ng-click="">
+          <i class="icon ion-chatbox"></i>
+          我收藏的加油站
+        </button>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
