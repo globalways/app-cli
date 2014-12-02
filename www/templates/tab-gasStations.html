@@ -1,8 +1,9 @@
-<ion-view title="Friends">
+<ion-view title="GasStations">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        {{friend.name}}
+      <ion-item ng-repeat="station in stations" type="item-text-wrap" href="#/tab/station/{{station.id}}">
+        {{station.name}}
+        {{station.from}}
       </ion-item>
     </ion-list>
   </ion-content>
