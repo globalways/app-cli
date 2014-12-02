@@ -1,7 +1,7 @@
 {
-  "name": "app-cli",
+  "name": "example",
   "version": "1.0.0",
-  "description": "app-cli: An Ionic project",
+  "description": "example: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
