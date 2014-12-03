@@ -6,6 +6,11 @@
     <button class="button" ng-click="login()">filter</button>
   </ion-nav-buttons>
   <ion-content>
+    <ion-refresher
+            pulling-text="Pull to refresh..."
+            refreshing-text="Refreshing..."
+            on-refresh="doRefresh()">
+    </ion-refresher>
     <ion-list>
       <ion-item ng-repeat="station in stations" type="item-text-wrap" href="#/tab/station/{{station.id}}">
         <h2>{{station.name}}</h2>

@@ -40,6 +40,13 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+
+  $scope.doRefresh = function() {
+    $timeout(function() {
+       $scope.stations.push({ id: 0, name: 'Scruff McGruff', from: '1.5km' });
+       $scope.$broadcast('scroll.refreshComplete');
+    }, 1000);
+  };
 })
 
 .controller('StationDetailCtrl', function($scope, $stateParams, Stations) {
