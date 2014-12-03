@@ -21,4 +21,36 @@ angular.module('starter.services', [])
       return stations[stationId];
     }
   }
+})
+
+.factory('Register', function(){
+
+  var phone;
+  var nick;
+  var password;
+
+  return {
+      savePhone: function(newPhone){
+          phone = newPhone;
+      },
+      getPhone: function(){
+          return phone;
+      },
+      saveNick: function(newNick){
+          nick = newNick;
+      },
+      getNick: function(){
+          return nick;
+      },
+      savePassword: function(newPassword){
+          password = newPassword;
+      },
+      getPassword: function(){
+          return password;
+      },
+      compare: function(tel, psd){
+          return phone==tel && password==psd;
+      }
+  }
+
 });

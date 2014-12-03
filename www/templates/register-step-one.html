@@ -1,0 +1,17 @@
+<ion-view title="Register step one">
+    <ion-nav-buttons side="left">
+        <button class="button button-clear" ng-click="backToLogin()">Back</button>
+    </ion-nav-buttons>
+    <ion-content>
+        <form ng-submit="doNext()">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="tel" placeholder="phone number" ng-model="registerData1.phone">
+                </label>
+            </div>
+            <div class="row">
+                <button class="button button-block button-positive" type="submit">Next</button>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
