@@ -50,21 +50,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     .state('register-step-one', {
       url: '/register-step-one',
-      views: {
-        'register-step-one': {
           templateUrl: 'templates/register-step-one.html',
           controller: 'RegisterOneCtrl'
-        }
-      }
     })
     .state('register-step-two', {
       url: '/register-step-two',
-      views: {
-        'register-step-two': {
           templateUrl: 'templates/register-step-two.html',
           controller: 'RegisterTwoCtrl'
-        }
-      }
     })
 
     .state('tab.gasStations', {

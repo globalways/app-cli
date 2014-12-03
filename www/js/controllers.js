@@ -56,21 +56,22 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('RegisterOneCtrl', function($scope, $state){
+.controller('RegisterOneCtrl', function($scope, $state, Register){
+  $scope.registerData1 = {};
   $scope.doNext = function() {
+    Register.savePhone($scope.registerData1.phone);
+    alert(Register.getPhone());
     $state.go('register-step-two');
   };
   $scope.backToLogin = function() {
-    $state.go('tab-more');
+    $state.go('more');
   };
 })
 
 .controller('RegisterTwoCtrl', function($scope, $state, Register){
-  $scope.registerData = {};
+  $scope.registerData2 = {};
   $scope.doRegister = function() {
-    Register.saveNick($scope.registerData2.nick);
-     alert($scope.loginData.phone);
-    Register.savePassword($scope.registerData2.password);
+    alert("phone:"+Register.getPhone()+" nick:"+$scope.registerData2.nick);
   };
   $scope.backToStepOne = function() {
     $state.go('register-step-one');
@@ -83,7 +84,6 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function($scope, $state) {
   $scope.toRegister = function() {
-  alert("register");
     $state.go('register-step-one');
   };
 });

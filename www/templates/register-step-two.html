@@ -1,4 +1,4 @@
-<ion-view title="Register step one">
+<ion-view title="Register step two">
     <ion-nav-buttons side="left">
         <button class="button button-clear" ng-click="backToStepOne()">Back</button>
     </ion-nav-buttons>
@@ -6,13 +6,10 @@
         <form ng-submit="doRegister()">
             <div class="list">
                 <label class="item item-input">
-                    <input type="text" placeholder="nick" ng-model="register.nick">
+                    <input type="text" placeholder="nick" ng-model="registerData2.nick">
                 </label>
                 <label class="item item-input">
                     <input type="password" placeholder="password" ng-model="registerData2.password">
-                </label>
-                <label class="item item-input">
-                    <input type="password" placeholder="repeat password" ng-model="registerData2.repeat">
                 </label>
             </div>
             <div class="row">
